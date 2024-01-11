@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica3.6</title>
     <link rel="stylesheet" href="style.css">
+     <!-- script javascript     -->
+<script>
+    function funcion_nom() {
+      var nom = document.getElementById("name").value;
+      alert ('bienvenido ' + nom)
+    }
+    
+    function funcion_edad() {
+      var age = document.getElementById("age").value;
+      alert ('con ' + age + ' ya tendrás el carnet de conducir. ¿no?')
+    }
+    
+    </script>
 </head>
 <body>
    <h3><b>Arc de Sant Martí</b></h3> 
+    <script>
 
+    </script>
    <p onmousemove="this.style.color='red'">roig,red,rojo</p>
    <p onmousemove="this.style.color='orange'">taronja,orange,naranja</p>
    <p onmousemove="this.style.color='yellow'">groc,yellow,amarillo</p>
@@ -17,6 +32,11 @@
    <p onmousemove="this.style.color='blue'">blau,blue,azul</p>
    <p onmousemove="this.style.color='purple'">morat,purple,morado</p>
 <hr>
+
+
+
+<input type="text" id="name" onblur="funcion_nom()">
+<input type="text" id="age" onchange="funcion_edad()">
 
 </body>
 </html>
