@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
      <!-- script javascript     -->
 <script>
-    function funcion_nom() {
-      var nom = document.getElementById("name").value;
-      alert ('bienvenido ' + nom)
+    function Myfuncion() {
+      alert ("Se ha ejecutado evento onload");
     }
-    
-    function funcion_edad() {
-      var age = document.getElementById("age").value;
-      alert ('con ' + age + ' ya tendrás el carnet de conducir. ¿no?')
+    function functionroig() {
+      alert("Hola 2024");
+      document.getElementsById("eltexto").style.color='red';
     }
-    
+    function functionvalencia() {
+      document.getElementById("textovalecnia").style.color='blue';
+    }
     </script>
 </head>
 <body>
@@ -24,6 +24,8 @@
     <script>
 
     </script>
+    <p id="eltexto" onclick="functionroig()">Este parafo</p>
+    <p id="textovalecnia" onclick="functionvalencia()">Valencia</p>
    <p onmousemove="this.style.color='red'">roig,red,rojo</p>
    <p onmousemove="this.style.color='orange'">taronja,orange,naranja</p>
    <p onmousemove="this.style.color='yellow'">groc,yellow,amarillo</p>
@@ -34,9 +36,6 @@
 <hr>
 
 
-
-<input type="text" id="name" onblur="funcion_nom()">
-<input type="text" id="age" onchange="funcion_edad()">
 
 </body>
 </html>
